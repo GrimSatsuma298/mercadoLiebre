@@ -1,0 +1,453 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    background-color: #ebebeb;
+}
+img{
+    width: 100%;
+}
+
+
+
+header{
+    background-color: #EAC926;
+    padding: 15px;
+    
+}
+
+nav ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+
+footer{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.search-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.searchBar{
+    position: relative;
+}
+
+.input-search{
+    width: 100%;
+    position: relative;
+    outline: none;
+    border: none;
+    min-height: 25px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.input-search:focus{
+    border: #1259c3 solid 2px;
+}
+
+
+.search-icon{
+    position: absolute;
+    border: none;
+    background: none;
+    top: 5px;
+    right: 5px;
+    color: gray;
+}
+
+
+.main-search{
+    width: 50%;
+}
+
+.text01{
+    margin: 15px;
+}
+.burger-menu{
+    border-radius: 5px;
+    font-size: 22px;
+    background-color: #1259c3;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40px;
+    
+}
+
+.article-product{
+    width: 90%;
+    margin: 20px 5%;
+
+}
+
+.image-margin{
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+.article-product:hover{
+    
+    box-shadow: 0px 0px 10px rgb(100 100 100); 
+}
+
+.article-product:hover .descripciones{
+    margin-top: 15px;
+    display: block;
+}
+
+
+
+
+.underImage{
+    display: flex;
+    position: relative;
+    padding: 8px;
+    flex-wrap: wrap;
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+
+}
+
+.truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 1s;
+}
+
+.article-product:hover .truck{
+    transform: rotate(-90deg);
+}
+
+.titulares{
+    font-size: 24px;
+    color:#666;
+    font-weight: 900;
+    margin: 10px 8px;
+}
+.precios{
+    width: 30%;
+    font-size: 18px;
+}
+.descuentos{ 
+    width: 70%;
+    font-size:16px;
+    color: #39b54a;
+    text-align: center;
+}
+.descripciones{
+    font-size: 16px;
+    display: none;
+}
+
+
+.footerIcons{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #03264C;
+}
+
+.main-list{
+    display: none;
+}
+
+/* Formulario - register */
+
+.register-form{
+    padding: 20px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    
+}
+
+
+.control-form{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    transition: all 1s;
+    outline: none;
+}
+
+.control-form::placeholder{
+    padding-left: 10px;
+}
+
+.form-text{
+    /* display: block; */
+    width: 100%;
+    font-weight: bolder;
+    font-size: 17px;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.user-type{
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-interests{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    font-size: 15px;
+
+}
+.control-interest{
+    width: 100%;
+    margin: 10px 0;
+}
+.form-avatar{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*  Formulario - login */
+
+.login-form{
+    margin-top: 20px;
+    padding: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.submit-button{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #1259c3;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.submit-button:hover{
+    background-color: #0022AA;
+    cursor: pointer;
+}
+
+.erase-button{
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+/* ***************************** TABLETS *************************************** */
+@media (min-width: 481px)
+{
+
+     /* Formulario - login */
+     .register-form{
+         justify-content: center;
+     }
+
+    .control-form, .submit-button{
+        width: 80%;
+    
+    }
+
+    /* Formulario - register */
+    .form-text, .user-type, .form-avatar, .erase-button, .form-interests{
+        width: 80%;
+    }
+
+    body{
+        font-size: 13px;
+    }
+    .main-search{
+        max-width: 20%;
+    }
+    .searchBar{
+        width: 40%;
+    }
+
+    .logo{
+        height: 50%;
+    }
+
+    .search-text{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .input-search{
+        background-size: 5%;
+    }
+
+    .text01{
+        max-width: 25%;
+    }
+
+    .main-list{
+        display: flex;
+        justify-content: space-around;
+    }
+    .burger-menu{
+        display: none;
+    }
+
+    .banner{
+        height: 120px;
+    }
+
+    .truck{
+        right: 5px;
+    }
+
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+
+   .article-product{
+       width: 45%;
+       margin: 20px 0;
+   }
+
+    .left-list{
+        display: flex;
+        
+    }
+    .left-list li {
+        padding: 8px 8px;
+        margin-top: 5px;
+    }
+
+
+    .right-list{
+        display: flex;
+        
+    }
+    .right-list li {
+        margin-top: 5px;
+        padding: 8px 8px;
+    }
+    
+}
+/* ***************************** LAPTOPS *************************************** */
+@media (min-width: 769px)
+{
+    /* Formulario - login */
+    .control-form{
+        margin-bottom: 50px;
+    }
+
+    .control-form, .submit-button{
+        width: 60%;
+    
+    }
+
+    /* Formulario - register */
+    .form-text, .user-type, .form-avatar, .erase-button, .form-interests{
+        width: 60%;
+    }
+
+    body{
+        font-size: 17px;
+    }
+
+
+    .main-search{
+        width: 20%;
+    }
+    .input-search{
+        background-size: 2.5%;
+        padding-right: 5px;
+    }
+
+    .banner{
+        height: 130px;
+        margin-bottom: 5px;
+    }
+
+    .user-type{
+        justify-content: space-evenly;
+    }
+    
+
+    .descripciones{
+      display: inline;
+      font-size: 20px;
+      
+    }
+
+    .searchBar{
+      width: 50%;
+    }
+
+    
+
+    .precios, .descripciones, .descuentos{
+    font-size: 15px;
+    }
+
+    .article-product{
+        width: 22%;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info{
+        width: calc(100%/3);
+    }
+
+    .footerIcons i:hover{
+        color: #0170e6;
+        transition: all 1s;
+
+    }
+
+}
